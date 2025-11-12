@@ -13,9 +13,9 @@ import { useTranslations } from "next-intl";
 import "./card.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
-type Props = {};
 
-const Projects = (props: Props) => {
+
+const Projects = () => {
   const pathname = usePathname();
   const isArabic = pathname.startsWith("/ar");
   const t = useTranslations();
@@ -153,3 +153,4 @@ const Projects = (props: Props) => {
 };
 
 export default Projects;
+
