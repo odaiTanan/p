@@ -10,9 +10,8 @@ import {
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 
-type Props = {};
 
-const Experince = (props: Props) => {
+const Experince = () => {
   const t = useTranslations();
   return (
     <motion.div
@@ -139,3 +138,4 @@ const Experince = (props: Props) => {
 };
 
 export default Experince;
+
