@@ -1,6 +1,25 @@
 "use client";
 import React, { useEffect } from "react";
 
+interface FinisherHeaderConfig {
+  count: number;
+  size: { min: number; max: number; pulse: number };
+  speed: { x: { min: number; max: number }; y: { min: number; max: number } };
+  colors: { background: string; particles: string[] };
+  blending: string;
+  opacity: { center: number; edge: number };
+  skew: number;
+  shapes: string[];
+}
+
+declare global {
+  interface Window {
+    FinisherHeader: {
+      new (config: FinisherHeaderConfig): unknown;
+    };
+  }
+}
+
 type Props = { children?: React.ReactNode };
 
 const Fnisher = (props: Props) => {
@@ -11,10 +30,8 @@ const Fnisher = (props: Props) => {
       script.src = "/finisher-header.es5.min.js";
       script.async = true;
       script.onload = () => {
-        // @ts-ignore
-        if (typeof FinisherHeader !== "undefined") {
-          // @ts-ignore
-          new FinisherHeader({
+        if (typeof window.FinisherHeader !== "undefined") {
+          new window.FinisherHeader({
             count: 6,
             size:
               window.innerWidth >= 786
@@ -42,12 +59,20 @@ const Fnisher = (props: Props) => {
         }
       };
       document.body.appendChild(script);
+
+      // Cleanup function to remove script when component unmounts
+      return () => {
+        if (document.body.contains(script)) {
+          document.body.removeChild(script);
+        }
+      };
     };
 
     loadScript();
   }, []);
+
   return (
-    <div className="flex bg-fixed relative home  header finisher-header min-h-screen justify-center  ">
+    <div className="flex bg-fixed relative home header finisher-header min-h-screen justify-center">
       {props.children}
     </div>
   );
