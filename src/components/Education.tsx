@@ -4,9 +4,8 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 import { HexagonBackground } from "./ui/shadcn-io/hexagon-background";
 
-type Props = {};
 
-const Education = (props: Props) => {
+const Education = () => {
   const t = useTranslations();
   return (
     <motion.div
@@ -83,3 +82,4 @@ const Education = (props: Props) => {
 };
 
 export default Education;
+
