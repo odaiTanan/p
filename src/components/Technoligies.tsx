@@ -5,9 +5,8 @@ import { faTools } from "@fortawesome/free-solid-svg-icons";
 import { useTranslations } from "next-intl";
 import { motion } from "framer-motion";
 
-type Props = {};
 
-const Technoligies = (props: Props) => {
+const Technoligies = () => {
   const svg = [
     {
       name: "Github",
@@ -197,3 +196,4 @@ const Technoligies = (props: Props) => {
 };
 
 export default Technoligies;
+
