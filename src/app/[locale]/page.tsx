@@ -1,5 +1,5 @@
 "use client";
-import VantaBackground from "@/components/Ani";
+
 import Nav from "@/components/Nav";
 import { HexagonBackground } from "@/components/ui/shadcn-io/hexagon-background";
 import { faDownload, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
