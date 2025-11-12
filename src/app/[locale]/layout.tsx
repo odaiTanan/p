@@ -14,19 +14,18 @@ export default async function LocaleLayout({
   params,
 }: {
   children: React.ReactNode;
-  params: Promise<{ locale: string }> | { locale: string };
+  params: { locale: string };
 }) {
-  const resolvedParams = await Promise.resolve(params);
-  const locale = resolvedParams.locale;
+  const locale = params.locale;
 
-  // Load messages directly for the specific locale
   const messages = (await import(`@/messages/${locale}.json`)).default;
 
   return (
     <NextIntlClientProvider locale={locale} messages={messages}>
       <div
         className={
-          locale === "ar" ? cairo.className : poppins.className + "bg-[#080808]"
+          (locale === "ar" ? cairo.className : poppins.className) +
+          " bg-[#080808]"
         }
         dir={locale === "ar" ? "rtl" : "ltr"}
       >
@@ -35,3 +34,4 @@ export default async function LocaleLayout({
     </NextIntlClientProvider>
   );
 }
+
