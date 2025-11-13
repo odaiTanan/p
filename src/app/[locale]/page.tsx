@@ -64,8 +64,8 @@ export default function Home() {
           <p className="text-2xl   text-gray-300">{t("tRole")}</p>
           <p className=" text-gray-300 md:text-xl"> {t("tExperince")}</p>
           <a
-            href=""
-            download
+            href="/Odai_tanan_resume.pdf"
+            download="odai-tanan-cv"
             className="p-4 bg-[var(--background2)] border border-2 border-primary rounded-2xl text-primary"
           >
             <FontAwesomeIcon icon={faDownload} /> {t("tDownloadCv")}
