@@ -34,7 +34,7 @@ export default async function LocaleLayout({
       <body
         className={`${
           locale === "ar" ? cairo.className : poppins.className
-        } bg-[#080808]`}
+        } `}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}
