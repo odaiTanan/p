@@ -35,6 +35,7 @@ export default function DynamicCarousel({ images }: Props) {
                 <CardContent className="flex justify-center items-center p-4">
                   <img
                     src={src}
+                    loading="lazy"
                     alt={`Slide ${index + 1}`}
                     className="
                       w-full
@@ -79,3 +80,4 @@ export default function DynamicCarousel({ images }: Props) {
     </div>
   );
 }
+
