@@ -37,9 +37,9 @@ export default function ContactPage() {
       setStatus("❌ " + "error");
     }
   };
-  
+
   const t = useTranslations();
-  
+
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -55,7 +55,7 @@ export default function ContactPage() {
         </div>
       </div>
 
-      <div className="card !bg-[#080808] shadow shadow-xl shadow-amber-50 my-[40px]">
+      <div className="card3 !bg-[#080808] shadow shadow-xl shadow-amber-50 my-[40px]">
         <a
           href="https://github.com/odaiTanan"
           className="socialContainer containerTwo"
@@ -143,9 +143,7 @@ export default function ContactPage() {
             </button>
 
             {status && (
-              <p className="text-center mt-2 text-sm text-gray-300">
-                {status}
-              </p>
+              <p className="text-center mt-2 text-sm text-gray-300">{status}</p>
             )}
           </form>
         </div>
