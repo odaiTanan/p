@@ -45,7 +45,7 @@ export default function ContactPage() {
       initial={{ opacity: 0 }}
       id="contact"
       whileInView={{ opacity: 1 }}
-      className="flex flex-col items-center justify-center min-h-screen py-20 bg-[#080808f0] relative overflow-hidden"
+      className="flex flex-col items-center justify-center min-h-screen py-20 relative overflow-hidden"
     >
       <div className="z-20 flex flex-col gap-[30px] text-center">
         <div dir="ltr" className="one relative z-20">
@@ -151,3 +151,4 @@ export default function ContactPage() {
     </motion.div>
   );
 }
+
