@@ -15,6 +15,7 @@ import Experince from "@/components/Expercince";
 import Projects from "@/components/Projects";
 import ContactPage from "@/components/Contact";
 import Fnisher from "@/components/Fnisher";
+import Footer from "@/components/Footer";
 export default function Home() {
   const t = useTranslations();
   const pathname = usePathname();
@@ -66,7 +67,7 @@ export default function Home() {
           <a
             href="/Odai_tanan_resume.pdf"
             download="odai-tanan-cv"
-            className="p-4 bg-[var(--background2)] border border-2 border-primary rounded-2xl text-primary"
+            className="p-4 hover:shadow-[0_0_10px_0_#00ffee9a] shadow-primary transform transition-all duration-200 bg-[var(--background2)] border border-2 border-primary rounded-2xl text-primary"
           >
             <FontAwesomeIcon icon={faDownload} /> {t("tDownloadCv")}
           </a>
@@ -96,6 +97,7 @@ export default function Home() {
         <Technoligies />
         <Projects />
         <ContactPage />
+        <Footer />
       </div>
     </div>
   );
