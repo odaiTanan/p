@@ -29,5 +29,12 @@
   "toksend": "Send",
   "tFastLinks": "Fast Links",
   "tLanguage": "Language",
-  "tAllRights": "All rights reserved"
+  "tAllRights": "All rights reserved",
+  "tadminPanel": "Admin Panel",
+  "tdemo": "Demo",
+  "timagesdesc": "Images & Description",
+  "tmedicalcenter": "Medical Center",
+  "trestaurant": "Restaurant",
+  "tecommerce": "E-Commerce",
+  "tsite": "Site"
 }
