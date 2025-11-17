@@ -51,7 +51,12 @@ function HexagonBackground({
       className={cn("relative size-full overflow-hidden", className)}
       {...props}
     >
+      {/* Background behind hexagons */}
+      <div className="absolute inset-0 bg-[#080808f0] -z-10" />
+
       <style>{`:root { --hexagon-margin: ${hexagonMargin}px; }`}</style>
+
+      {/* Hexagon grid */}
       <div className="absolute top-0 left-0 size-full overflow-hidden">
         {Array.from({ length: gridDimensions.rows }).map((_, rowIndex) => (
           <div
@@ -90,6 +95,7 @@ function HexagonBackground({
           </div>
         ))}
       </div>
+
       {children}
     </div>
   );
