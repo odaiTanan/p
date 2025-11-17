@@ -14,7 +14,6 @@ import "./card.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 
-
 const Projects = () => {
   const pathname = usePathname();
   const isArabic = pathname.startsWith("/ar");
@@ -49,6 +48,7 @@ const Projects = () => {
                 <img className="" src="/medicalcenter/l.png" />
               </div>
               <div className="card-back c1">
+                <h1 className="text-center mb-2">{t("tmedicalcenter")}</h1>
                 <span
                   className="cursor-pointer hover:color-[var(--primary)]"
                   onClick={() => {
@@ -60,7 +60,7 @@ const Projects = () => {
                     className="bg-transparent text-white text-sm mx-2"
                     icon={faDotCircle}
                   />
-                  site
+                  {t("tsite")}
                 </span>
                 <span
                   className="cursor-pointer hover:color-[var(--primary)]"
@@ -73,7 +73,7 @@ const Projects = () => {
                     className="bg-transparent text-white text-sm mx-2"
                     icon={faDotCircle}
                   />
-                  dashboard
+                  {t("tadminPanel")}
                 </span>
                 <Link
                   href={isArabic ? "/ar/medicalcenter" : "/en/medicalcenter"}
@@ -83,7 +83,7 @@ const Projects = () => {
                     className="bg-transparent text-white text-sm mx-2"
                     icon={faDotCircle}
                   />
-                  images & description
+                  {t("timagesdesc")}
                 </Link>
               </div>
             </div>
@@ -94,6 +94,7 @@ const Projects = () => {
                 <img className="" src="/restaurant/l.png" />
               </div>
               <div className="card-back c2">
+                <h1 className="text-center mb-2">{t("trestaurant")}</h1>
                 <span
                   className="cursor-pointer"
                   onClick={() =>
@@ -105,14 +106,14 @@ const Projects = () => {
                     className="bg-transparent text-white text-sm mx-2"
                     icon={faDotCircle}
                   />
-                  demo
+                  {t("tdemo")}
                 </span>
                 <Link href={isArabic ? "/ar/restaurant" : "/en/restaurant"}>
                   <FontAwesomeIcon
                     className="bg-transparent text-white text-sm mx-2"
                     icon={faDotCircle}
                   />
-                  images & description
+                  {t("timagesdesc")}
                 </Link>
               </div>
             </div>
@@ -123,6 +124,7 @@ const Projects = () => {
                 <img className="" src="/ecommerce/l.png" />
               </div>
               <div className="card-back c3">
+                <h1 className="text-center mb-2">{t("tecommerce")}</h1>
                 <span
                   className="cursor-pointer"
                   onClick={() =>
@@ -134,14 +136,14 @@ const Projects = () => {
                     className="bg-transparent text-white text-sm mx-2"
                     icon={faDotCircle}
                   />
-                  demo
+                  {t("tdemo")}
                 </span>
                 <Link href={isArabic ? "/ar/ecommerce" : "/en/ecommerce"}>
                   <FontAwesomeIcon
                     className="bg-transparent text-white text-sm mx-2"
                     icon={faDotCircle}
                   />
-                  images & description
+                  {t("timagesdesc")}
                 </Link>
               </div>
             </div>
@@ -153,5 +155,3 @@ const Projects = () => {
 };
 
 export default Projects;
-
-
