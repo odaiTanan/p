@@ -24,7 +24,7 @@ const Projects = () => {
       initial={{ opacity: 0 }}
       id="projects"
       whileInView={{ opacity: 1 }}
-      className="flex flex-col items-center py-20 bg-[#080808f0] relative home overflow-hidden  min-h-screen justify-start "
+      className="flex flex-col items-center py-20  relative home overflow-hidden  min-h-screen justify-start "
     >
       {" "}
       <motion.section
@@ -153,4 +153,5 @@ const Projects = () => {
 };
 
 export default Projects;
+
 
