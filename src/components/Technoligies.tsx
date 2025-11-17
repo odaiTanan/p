@@ -172,7 +172,7 @@ const Technoligies = () => {
   const t = useTranslations();
 
   return (
-    <div id="technologies" className="bg-[#080808f0] relative z-20 py-[100px]">
+    <div id="technologies" className=" relative z-20 py-[100px]">
       <motion.section
         initial={{ opacity: 0, y: 80 }}
         whileInView={{ opacity: 1, y: 0 }}
@@ -196,4 +196,5 @@ const Technoligies = () => {
 };
 
 export default Technoligies;
+
 
