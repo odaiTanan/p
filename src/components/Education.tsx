@@ -12,7 +12,7 @@ const Education = () => {
       initial={{ opacity: 0 }}
       whileInView={{ opacity: 1 }}
       id="education"
-      className="flex flex-col items-center py-20 bg-[#080808f0] relative home overflow-hidden  min-h-[50%] justify-start "
+      className="flex flex-col items-center py-20  relative home overflow-hidden  min-h-[50%] justify-start "
     >
       {" "}
       <motion.section
@@ -82,4 +82,5 @@ const Education = () => {
 };
 
 export default Education;
+
 
