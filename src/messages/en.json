@@ -20,7 +20,7 @@
   "tjob": "Fullstack Developer",
   "tjob2": "Fullstack Developer",
   "tfreelance": "Freelancer  (2023-Present)",
-  "texperince2": " Developed and maintained full-stack web applications using Laravel and Reactjs,RESTful API endpoints,Built responsive and interactive user interfaces with modern React, state management,Implemented secure user authentication and access control using JWT.",
+  "texperince2": "Developed full-stack web applications using Laravel and React.js ,Built RESTful APIs with Laravel and created responsive UIs with React ,Managed application state and built reusable components ,Implemented secure JWT authentication and user access control ."
   "tcontact": "Contact Me",
   "tsend": "send a message",
   "tyourname": "Your Name",
@@ -63,4 +63,5 @@
   "trestaurantTech": "React.js, Redux Toolkit, Tailwind CSS, Axios, PHP, MySQL",
   "tech": "technologies"
 }
+
 
