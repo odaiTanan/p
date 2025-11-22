@@ -285,8 +285,8 @@ ul {
 }
 
 .card:hover .number::after {
-  width: 1300px;
-  height: 1300px;
+  width: 1500px;
+  height: 1500px;
 }
 .card svg {
   color: var(--primary);
