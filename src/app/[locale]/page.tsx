@@ -22,8 +22,8 @@ export default function Home() {
   const isArabic = pathname.startsWith("/ar");
 
   const sentence = isArabic
-    ? "مرحبًا ، أنا عدي تنن - مهندس برمجيات ومطور واجهات أمامية"
-    : "Hi, I am Oday Tanan — Software Engineer and Frontend Developer";
+    ? "مرحبًا ، أنا عدي تنن - مهندس برمجيات ومطور ويب"
+    : "Hi, I am Oday Tanan — Software Engineer and Web Developer";
   const words = sentence.split(" ");
 
   return (
