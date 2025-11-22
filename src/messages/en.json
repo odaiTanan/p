@@ -17,10 +17,10 @@
   "ttools": "Technologies",
   "tExperincetitle": "Experince",
   "texperince1": " building interactive web applications using React.js and other modern tools with databases and apis .",
-  "tjob": "Frontend Developer",
+  "tjob": "Fullstack Developer",
   "tjob2": "Fullstack Developer",
   "tfreelance": "Freelancer  (2023-Present)",
-  "texperince2": " designing attractive and user-friendly user interfaces to enhance user experience using react & next and integration with and assisting backend developers.",
+  "texperince2": " Developed and maintained full-stack web applications using Laravel and React.js.Engineered a robust Laravel backend with RESTful API endpoints to serve data to the dynamic React frontend.Built responsive and interactive user interfaces with modern React, state management, and reusable components.Implemented secure user authentication and access control using JWT (JSON Web Tokens).",
   "tcontact": "Contact Me",
   "tsend": "send a message",
   "tyourname": "Your Name",
@@ -63,3 +63,4 @@
   "trestaurantTech": "React.js, Redux Toolkit, Tailwind CSS, Axios, PHP, MySQL",
   "tech": "technologies"
 }
+
