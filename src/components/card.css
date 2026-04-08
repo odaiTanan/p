@@ -1,76 +1,120 @@
-/* From Uiverse.io by vamsidevendrakumar */
-.card2 {
-  width: 300px;
-  height: 200px;
+/* Glass Morphism Project Cards */
+.projectCard {
+  width: 320px;
+  height: 220px;
   perspective: 1000px;
   overflow: hidden;
+  border-radius: 20px;
 }
 
-.card-inner {
+.projectCardInner {
   width: 100%;
   height: 100%;
   position: relative;
   transform-style: preserve-3d;
-  transition: transform 0.999s;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.card2:hover .card-inner {
+.projectCard:hover .projectCardInner {
   transform: rotateY(180deg);
 }
 
-.card-front,
-.card-back {
+.projectCardFront,
+.projectCardBack {
   position: absolute;
   width: 100%;
   height: 100%;
   backface-visibility: hidden;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
-.card-front {
-  background-color: #6a2c70;
+.projectCardFront {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
   color: #fff;
   display: flex;
   align-items: center;
-  overflow: hidden;
-  border-radius: 10px;
   justify-content: center;
   font-size: 24px;
   transform: rotateY(0deg);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
 }
-.card-front.c1 {
-  border: 5px solid #f0895dcc;
+.projectCardFront.pc1 {
+  border: 2px solid rgba(240, 137, 93, 0.5);
 }
-.card-front.c2 {
-  border: 5px solid #cd2600;
+.projectCardFront.pc2 {
+  border: 2px solid rgba(205, 38, 0, 0.5);
 }
-.card-front.c3 {
-  border: 5px solid #09507e;
+.projectCardFront.pc3 {
+  border: 2px solid rgba(9, 80, 126, 0.5);
 }
-.card-back.c1 {
-  background-color: #f05d5d;
-  border: 10px solid #f05d5d;
+.projectCardFront.pc4 {
+  border: 2px solid rgba(0, 168, 107, 0.5);
 }
-.card-back.c2 {
-  background-color: #cd2600;
-  border: 10px solid #cd2600;
+
+.projectCardBack.pc1 {
+  background: rgba(240, 93, 93, 0.15);
+  border: 1px solid rgba(240, 93, 93, 0.3);
+  box-shadow: 0 8px 32px rgba(240, 93, 93, 0.15), inset 0 0 20px rgba(240, 93, 93, 0.05);
 }
-.card-back.c3 {
-  background-color: #09507e;
-  border: 10px solid #09507e;
+.projectCardBack.pc2 {
+  background: rgba(205, 38, 0, 0.15);
+  border: 1px solid rgba(205, 38, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(205, 38, 0, 0.15), inset 0 0 20px rgba(205, 38, 0, 0.05);
 }
-.card-front img {
-  width: 100%;
-  height: 100%;
+.projectCardBack.pc3 {
+  background: rgba(9, 80, 126, 0.15);
+  border: 1px solid rgba(9, 80, 126, 0.3);
+  box-shadow: 0 8px 32px rgba(9, 80, 126, 0.15), inset 0 0 20px rgba(9, 80, 126, 0.05);
 }
-.card-back {
+.projectCardBack.pc4 {
+  background: rgba(0, 168, 107, 0.15);
+  border: 1px solid rgba(0, 168, 107, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 168, 107, 0.15), inset 0 0 20px rgba(0, 168, 107, 0.05);
+}
+.projectCardBack {
   color: #fff;
   display: flex;
-
-  border: 10px solid #f08a5d;
-  border-radius: 10px;
-  gap: 20px;
+  background: rgba(0, 168, 107, 0.15);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 255, 238, 0.2);
+  border-radius: 20px;
+  gap: 15px;
   flex-direction: column;
-  font-size: 17px;
+  font-size: 15px;
   transform: rotateY(180deg);
+  box-shadow: 0 8px 32px rgba(0, 255, 238, 0.15), inset 0 0 20px rgba(0, 255, 238, 0.05);
+  padding: 20px;
+}
+
+.projectCardBack h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #00ffee;
+  text-shadow: 0 0 10px rgba(0, 255, 238, 0.5);
+}
+
+.projectCardBack span,
+.projectCardBack a {
+  display: flex;
+  align-items: center;
+  padding: 8px 12px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  text-decoration: none;
+  color: #fff;
+}
+
+.projectCardBack span:hover,
+.projectCardBack a:hover {
+  background: rgba(0, 255, 238, 0.15);
+  transform: translateX(5px);
+  box-shadow: 0 0 15px rgba(0, 255, 238, 0.3);
 }
 

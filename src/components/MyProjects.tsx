@@ -2,11 +2,23 @@
 import { useTranslations } from "next-intl";
 import React from "react";
 import { motion } from "framer-motion";
-type Props = { project: 0 | 1 | 2 };
+type Props = { project: 0 | 1 | 2 | 3 };
 
 const Myprojects = (props: Props) => {
   const t = useTranslations();
   const projects = [
+    {
+      title: t("treeklandTitle"),
+
+      description: t("treeklandDesc"),
+      features: [
+        t("treeklandFeature1"),
+        t("treeklandFeature2"),
+        t("treeklandFeature3"),
+        t("treeklandFeature4"),
+      ],
+      techStack: t("treeklandTech"),
+    },
     {
       title: t("tmedicalcenterTitle"),
 
@@ -43,6 +55,7 @@ const Myprojects = (props: Props) => {
       ],
       techStack: t("trestaurantTech"),
     },
+    
   ];
   return (
     <motion.section

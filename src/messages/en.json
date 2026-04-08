@@ -6,7 +6,7 @@
   "tProjects": "Projects",
   "tContact": "Contact",
   "tName": "Oday Tanan",
-  "tRole": "Specialest in React Js and Modern Frontend Developement Tools And Liberaries",
+  "tRole": "Specialest in React Js and laravel and other tools related to them ",
   "tExperince": "(With 2 Years Of Experince)",
   "tDownloadCv": "Download Cv",
   "teducation": "Education",
@@ -20,7 +20,10 @@
   "tjob": "Fullstack Developer",
   "tjob2": "Fullstack Developer",
   "tfreelance": "Freelancer  (2023-Present)",
-  "texperince2": "Developed full-stack web applications using Laravel and React.js ,Built RESTful APIs with Laravel and created responsive UIs with React ,Managed application state and built reusable components ,Implemented secure JWT authentication and user access control ."
+  "texperince2": "Developed full-stack web applications using Laravel and React.js ,Built RESTful APIs with Laravel and created responsive UIs with React ,Managed application state and built reusable components ,Implemented secure JWT authentication and user access control .",
+  "tjob3": "Fullstack Developer",
+  "treeloagency": "Reelo Agency (Nov 2025 - Present)",
+  "texperince3": "Building interactive web applications using React and Laravel. Developing APIs for frontend integration. Creating interactive web pages using Next.js and React with API integration. Deploying websites on VPS and shared hosting.",
   "tcontact": "Contact Me",
   "tsend": "send a message",
   "tyourname": "Your Name",
@@ -61,6 +64,15 @@
   "trestaurantFeature3": "Order Management with Status Updates",
   "trestaurantFeature4": "Admin Dashboard CRUD Operations",
   "trestaurantTech": "React.js, Redux Toolkit, Tailwind CSS, Axios, PHP, MySQL",
+  "treekland": "Reef Land",
+  "treeklandTitle": "Real Estate & Marketplace Platform",
+  "treeklandType": "live",
+  "treeklandDesc": "A comprehensive system with dashboards and mobile app for displaying, selling and renting commercial shops, cars, and houses. Features complete admin dashboards and cross-platform mobile application.",
+  "treeklandFeature1": "Web Dashboard with React & Laravel",
+  "treeklandFeature2": "Cross-Platform Mobile App (React Native)",
+  "treeklandFeature3": "Property Management (Shops, Cars, Houses)",
+  "treeklandFeature4": "Admin Panels with Full CRUD Operations",
+  "treeklandTech": "React.js, Laravel, React Native, REST API, MySQL",
   "tech": "technologies"
 }
 

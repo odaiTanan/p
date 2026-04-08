@@ -2,20 +2,30 @@
 
 import Nav from "@/components/Nav";
 import { HexagonBackground } from "@/components/ui/shadcn-io/hexagon-background";
-import { faDownload, faGraduationCap } from "@fortawesome/free-solid-svg-icons";
+import { faDownload } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import Image from "next/image";
-import { useEffect } from "react";
+import dynamic from "next/dynamic";
 import { motion } from "framer-motion";
 import { useTranslations } from "next-intl";
 import { usePathname } from "next/navigation";
-import Technoligies from "@/components/Technoligies";
-import Education from "@/components/Education";
-import Experince from "@/components/Expercince";
-import Projects from "@/components/Projects";
-import ContactPage from "@/components/Contact";
-import Fnisher from "@/components/Fnisher";
-import Footer from "@/components/Footer";
+
+const Education = dynamic(() => import("@/components/Education"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const Experince = dynamic(() => import("@/components/Expercince"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const Technoligies = dynamic(() => import("@/components/Technoligies"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const Projects = dynamic(() => import("@/components/Projects"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const ContactPage = dynamic(() => import("@/components/Contact"), {
+  loading: () => <div className="min-h-[400px]" />,
+});
+const Fnisher = dynamic(() => import("@/components/Fnisher"));
+const Footer = dynamic(() => import("@/components/Footer"));
 export default function Home() {
   const t = useTranslations();
   const pathname = usePathname();

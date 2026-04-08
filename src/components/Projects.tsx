@@ -1,18 +1,14 @@
 import { motion } from "framer-motion";
 import {
   faDotCircle,
-  faGraduationCap,
-  faHouseFloodWater,
-  faList,
-  faListDots,
   faProjectDiagram,
-  faStopwatch,
 } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 import "./card.css";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 
 const Projects = () => {
   const pathname = usePathname();
@@ -31,6 +27,7 @@ const Projects = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.8 }}
         viewport={{ once: true, amount: 0.2 }}
+        className="px-4 md:px-8 lg:px-12"
       >
         {" "}
         <div className="z-20 flex flex-col  gap-[30px]  text-center  mb-[200px]">
@@ -40,14 +37,57 @@ const Projects = () => {
             </h1>
           </div>
         </div>
-        <div className="flex justify-center gap-20 flex-wrap ">
+        <div className="max-w-6xl mx-auto w-full flex justify-start gap-10 md:gap-16 lg:gap-20 flex-wrap px-4">
           {" "}
-          <div className="card2">
-            <div className="card-inner">
-              <div className="card-front c1">
-                <img className="" src="/medicalcenter/l.png" />
+          <div className="projectCard">
+            <div className="projectCardInner">
+              <div className="projectCardFront pc4">
+                <Image
+                  src="/reef-land/l.png"
+                  alt="Reef Land Project"
+                  width={400}
+                  height={300}
+                  className="object-cover w-full h-full"
+                  priority
+                />
               </div>
-              <div className="card-back c1">
+              <div className="projectCardBack pc4">
+                <h1 className="text-center mb-2">{t("treekland")}</h1>
+                <span
+                  className="cursor-pointer"
+                  onClick={() =>
+                    (window.location.href = "https://reef-land.me")
+                  }
+                >
+                  <FontAwesomeIcon
+                    className="bg-transparent text-white text-sm mx-2"
+                    icon={faDotCircle}
+                  />
+                  {t("tsite")}
+                </span>
+                <Link href={isArabic ? "/ar/reef-land" : "/en/reef-land"}>
+                  <FontAwesomeIcon
+                    className="bg-transparent text-white text-sm mx-2"
+                    icon={faDotCircle}
+                  />
+                  {t("timagesdesc")}
+                </Link>
+              </div>
+            </div>
+          </div>{" "}
+          <div className="projectCard">
+            <div className="projectCardInner">
+              <div className="projectCardFront pc1">
+                <Image
+                  src="/medicalcenter/l.png"
+                  alt="Medical Center Project"
+                  width={400}
+                  height={300}
+                  className="object-cover w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="projectCardBack pc1">
                 <h1 className="text-center mb-2">{t("tmedicalcenter")}</h1>
                 <span
                   className="cursor-pointer hover:color-[var(--primary)]"
@@ -88,42 +128,19 @@ const Projects = () => {
               </div>
             </div>
           </div>{" "}
-          <div className="card2">
-            <div className="card-inner">
-              <div className="card-front c2">
-                <img className="" src="/restaurant/l.png" />
+          <div className="projectCard">
+            <div className="projectCardInner">
+              <div className="projectCardFront pc3">
+                <Image
+                  src="/ecommerce/l.png"
+                  alt="E-Commerce Project"
+                  width={400}
+                  height={300}
+                  className="object-cover w-full h-full"
+                  loading="lazy"
+                />
               </div>
-              <div className="card-back c2">
-                <h1 className="text-center mb-2">{t("trestaurant")}</h1>
-                <span
-                  className="cursor-pointer"
-                  onClick={() =>
-                    (window.location.href =
-                      "https://drive.google.com/file/d/1Hbhc5eFT7hs65qKHt1jhQg5KlYnNDBQ3/view")
-                  }
-                >
-                  <FontAwesomeIcon
-                    className="bg-transparent text-white text-sm mx-2"
-                    icon={faDotCircle}
-                  />
-                  {t("tdemo")}
-                </span>
-                <Link href={isArabic ? "/ar/restaurant" : "/en/restaurant"}>
-                  <FontAwesomeIcon
-                    className="bg-transparent text-white text-sm mx-2"
-                    icon={faDotCircle}
-                  />
-                  {t("timagesdesc")}
-                </Link>
-              </div>
-            </div>
-          </div>{" "}
-          <div className="card2">
-            <div className="card-inner">
-              <div className="card-front c3">
-                <img className="" src="/ecommerce/l.png" />
-              </div>
-              <div className="card-back c3">
+              <div className="projectCardBack pc3">
                 <h1 className="text-center mb-2">{t("tecommerce")}</h1>
                 <span
                   className="cursor-pointer"
@@ -139,6 +156,43 @@ const Projects = () => {
                   {t("tdemo")}
                 </span>
                 <Link href={isArabic ? "/ar/ecommerce" : "/en/ecommerce"}>
+                  <FontAwesomeIcon
+                    className="bg-transparent text-white text-sm mx-2"
+                    icon={faDotCircle}
+                  />
+                  {t("timagesdesc")}
+                </Link>
+              </div>
+            </div>
+          </div>{" "}
+          <div className="projectCard">
+            <div className="projectCardInner">
+              <div className="projectCardFront pc2">
+                <Image
+                  src="/restaurant/l.png"
+                  alt="Restaurant Project"
+                  width={400}
+                  height={300}
+                  className="object-cover w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="projectCardBack pc2">
+                <h1 className="text-center mb-2">{t("trestaurant")}</h1>
+                <span
+                  className="cursor-pointer"
+                  onClick={() =>
+                    (window.location.href =
+                      "https://drive.google.com/file/d/1Hbhc5eFT7hs65qKHt1jhQg5KlYnNDBQ3/view")
+                  }
+                >
+                  <FontAwesomeIcon
+                    className="bg-transparent text-white text-sm mx-2"
+                    icon={faDotCircle}
+                  />
+                  {t("tdemo")}
+                </span>
+                <Link href={isArabic ? "/ar/restaurant" : "/en/restaurant"}>
                   <FontAwesomeIcon
                     className="bg-transparent text-white text-sm mx-2"
                     icon={faDotCircle}

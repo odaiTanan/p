@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 import { HexagonBackground } from "./ui/shadcn-io/hexagon-background";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faTools } from "@fortawesome/free-solid-svg-icons";
@@ -112,6 +113,10 @@ const Technoligies = () => {
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
     "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/php/php-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/laravel/laravel-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg",
+    "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/azuresqldatabase/azuresqldatabase-original.svg",
   ];
 
   const showsvg = svg.map((item, key) => (
@@ -157,7 +162,15 @@ const Technoligies = () => {
           damping: 15,
         }}
       >
-        <img className="w-[80px] h-[80px]" src={tech} alt={name} />
+        <Image
+          className="w-[80px] h-[80px]"
+          src={tech}
+          alt={name}
+          width={80}
+          height={80}
+          loading="lazy"
+          unoptimized
+        />
         <motion.span
           initial={{ opacity: 0 }}
           whileHover={{ opacity: 1 }}

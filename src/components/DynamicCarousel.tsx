@@ -1,6 +1,7 @@
 "use client";
 
 import * as React from "react";
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import {
   Carousel,
@@ -33,10 +34,11 @@ export default function DynamicCarousel({ images }: Props) {
             >
               <Card className="w-full bg-transparent border-0 shadow-none">
                 <CardContent className="flex justify-center items-center p-4">
-                  <img
+                  <Image
                     src={src}
-                    loading="lazy"
                     alt={`Slide ${index + 1}`}
+                    width={800}
+                    height={500}
                     className="
                       w-full
                       h-auto
@@ -48,6 +50,8 @@ export default function DynamicCarousel({ images }: Props) {
                       duration-300
                       hover:scale-[1.02]
                     "
+                    loading="lazy"
+                    sizes="(max-width: 768px) 100vw, 800px"
                   />
                 </CardContent>
               </Card>

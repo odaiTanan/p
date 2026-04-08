@@ -8,8 +8,18 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-const cairo = Cairo({ subsets: ["arabic"], weight: ["400", "700"] });
-const poppins = Poppins({ subsets: ["latin"], weight: ["400", "700"] });
+const cairo = Cairo({
+  subsets: ["arabic"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-cairo",
+});
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  display: "swap",
+  variable: "--font-poppins",
+});
 
 export default async function LocaleLayout({
   children,
@@ -32,9 +42,9 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={locale === "ar" ? "rtl" : "ltr"}>
       <body
-        className={`${
+        className={`${locale === "ar" ? cairo.variable : poppins.variable} ${
           locale === "ar" ? cairo.className : poppins.className
-        } `}
+        } antialiased`}
       >
         <NextIntlClientProvider locale={locale} messages={messages}>
           {children}

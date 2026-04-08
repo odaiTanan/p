@@ -1,12 +1,5 @@
 import { motion } from "framer-motion";
-import {
-  faBusinessTime,
-  faGraduationCap,
-  faHouseFloodWater,
-  faStopwatch,
-  faTimes,
-  faUserTimes,
-} from "@fortawesome/free-solid-svg-icons";
+import { faBusinessTime } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { useTranslations } from "next-intl";
 
@@ -104,11 +97,11 @@ const Experince = () => {
                 </g>
               </svg>
             </div>
-            <p className="heading text-primary mt-[-25px]">{t("tjob2")}</p>
+            <p className="heading text-primary mt-[-25px]">{t("tjob3")}</p>
             <p className="company relative text-gray-400 mb-2 z-20">
-              {t("tfreelance")}
+              {t("treeloagency")}
             </p>
-            <p className="content">{t("texperince1")}</p>
+            <p className="content">{t("texperince3")}</p>
           </div>
           <div className="card text-white">
             <div className="number">
@@ -127,9 +120,40 @@ const Experince = () => {
             </div>
             <p className="heading text-primary">{t("tjob")}</p>
             <p className="company relative text-gray-400 mb-2 z-20">
-              Hdr Agency {"(2025-Present)"}
+              Hdr Agency {"(2025-2026)"}
             </p>
             <p className="content">{t("texperince2")}</p>
+          </div>{" "}
+          <div className="card text-white">
+            <div className="number">
+              <p className="text">3</p>
+            </div>
+
+            <div className="icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="80"
+                height="80"
+                fill="var(--primary)"
+                viewBox="0 0 64 64"
+                role="img"
+                focusable="false"
+                className="icon world text-center"
+              >
+                <g id="freelance">
+                  <rect x="8" y="12" width="48" height="36" rx="4" fill="none" stroke="currentColor" strokeWidth="2"/>
+                  <line x1="8" y1="20" x2="56" y2="20" stroke="currentColor" strokeWidth="2"/>
+                  <circle cx="16" cy="16" r="2" fill="currentColor"/>
+                  <circle cx="24" cy="16" r="2" fill="currentColor"/>
+                  <path d="M20 28h24M20 34h18M20 40h12" stroke="currentColor" strokeWidth="2" strokeLinecap="round"/>
+                </g>
+              </svg>
+            </div>
+            <p className="heading text-primary mt-[-25px]">{t("tjob2")}</p>
+            <p className="company relative text-gray-400 mb-2 z-20">
+              {t("tfreelance")}
+            </p>
+            <p className="content">{t("texperince1")}</p>
           </div>
         </div>
       </motion.section>
