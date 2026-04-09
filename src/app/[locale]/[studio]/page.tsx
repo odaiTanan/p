@@ -1,16 +1,7 @@
 import DynamicCarousel from "@/components/DynamicCarousel";
 import { getImages } from "../../lib/getImages";
-
-import { HexagonBackground } from "@/components/ui/shadcn-io/hexagon-background";
-import { useEffect } from "react";
 import Fnisher from "@/components/Fnisher";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowAltCircleLeft,
-  faBackward,
-} from "@fortawesome/free-solid-svg-icons";
 import ExternalNav from "@/components/ExternalNav";
-import { useTranslations } from "next-intl";
 import Myprojects from "@/components/MyProjects";
 interface PageProps {
   params: Promise<{ lang: string; studio: string }>;
