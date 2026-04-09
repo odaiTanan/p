@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Oday Tanan" }],
   creator: "Oday Tanan",
   publisher: "Oday Tanan",
-  metadataBase: new URL("https://odaytanan.vercel.app"),
+  metadataBase: new URL("https://oday-tanan.tech"),
   alternates: {
     canonical: "/",
     languages: {
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     description: "Portfolio of Oday Tanan - Specialized in React.js, Next.js, and Modern Frontend Development",
     type: "website",
     locale: "en_US",
-    url: "https://odaytanan.vercel.app",
+    url: "https://oday-tanan.tech",
     siteName: "Oday Tanan Portfolio",
     images: [
       {
