@@ -22,7 +22,7 @@ export default async function SitePage({ params }: PageProps) {
           <DynamicCarousel images={images} />
           <Myprojects
             project={
-              studio === "reef-land" ? 0 : studio === "medicalcenter" ? 1 : studio === "ecommerce" ? 2 : 3
+              studio === "reef-land" ? 0 : studio === "medicalcenter" ? 1 : studio === "ecommerce" ? 2 : studio === "restaurant" ? 3 : 4
             }
           />
         </div>{" "}

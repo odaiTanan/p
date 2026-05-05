@@ -73,6 +73,15 @@
   "treeklandFeature3": "Property Management (Shops, Cars, Houses)",
   "treeklandFeature4": "Admin Panels with Full CRUD Operations",
   "treeklandTech": "React.js, Laravel, React Native, REST API, MySQL",
+  "talfayad": "Alfayad Invest",
+  "talfayadTitle": "Investment Platform with Media Studio",
+  "talfayadType": "live",
+  "talfayadDesc": "Comprehensive investment website featuring blog system, image gallery, and video studio. Built with modern web technologies for optimal performance and user experience.",
+  "talfayadFeature1": "Blog System with Content Management",
+  "talfayadFeature2": "Image Gallery with Advanced Filtering",
+  "talfayadFeature3": "Video Studio for Media Management",
+  "talfayadFeature4": "Investment Tracking Dashboard",
+  "talfayadTech": "Next.js, Laravel, REST API, MySQL",
   "tech": "technologies"
 }
 

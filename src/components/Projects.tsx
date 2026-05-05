@@ -201,6 +201,30 @@ const Projects = () => {
                 </Link>
               </div>
             </div>
+          </div>{" "}
+          <div className="projectCard">
+            <div className="projectCardInner">
+              <div className="projectCardFront pc5">
+                <Image
+                  src="/alfayad/l.png"
+                  alt="Alfayad Invest Project"
+                  width={400}
+                  height={300}
+                  className="object-cover w-full h-full"
+                  loading="lazy"
+                />
+              </div>
+              <div className="projectCardBack pc5">
+                <h1 className="text-center mb-2">{t("talfayad")}</h1>
+                <Link href={isArabic ? "/ar/alfayad" : "/en/alfayad"}>
+                  <FontAwesomeIcon
+                    className="bg-transparent text-white text-sm mx-2"
+                    icon={faDotCircle}
+                  />
+                  {t("timagesdesc")}
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </motion.section>

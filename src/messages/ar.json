@@ -73,6 +73,15 @@
   "treeklandFeature3": "إدارة العقارات (محلات، سيارات، منازل)",
   "treeklandFeature4": "لوحات إدارة مع عمليات CRUD كاملة",
   "treeklandTech": "React.js, Laravel, React Native, REST API, MySQL",
+  "talfayad": "الفياض للاستثمار",
+  "talfayadTitle": "منصة استثمارية مع استوديو إعلامي",
+  "talfayadType": "مباشر",
+  "talfayadDesc": "موقع استثماري شامل يضم نظام مدونة، معرض صور، واستوديو فيديو. مبني بأحدث تقنيات الويب للأداء الأمثل وتجربة مستخدم متميزة.",
+  "talfayadFeature1": "نظام مدونة مع إدارة المحتوى",
+  "talfayadFeature2": "معرض صور مع تصفية متقدمة",
+  "talfayadFeature3": "استوديو فيديو لإدارة الوسائط",
+  "talfayadFeature4": "لوحة تحكم لتتبع الاستثمارات",
+  "talfayadTech": "Next.js, Laravel, REST API, MySQL",
   "tech": "التقنيات"
 }
 
