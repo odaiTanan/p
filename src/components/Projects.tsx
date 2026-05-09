@@ -216,6 +216,18 @@ const Projects = () => {
               </div>
               <div className="projectCardBack pc5">
                 <h1 className="text-center mb-2">{t("talfayad")}</h1>
+                <span
+                  className="cursor-pointer"
+                  onClick={() =>
+                    (window.location.href = "https://alfayadinvest.com")
+                  }
+                >
+                  <FontAwesomeIcon
+                    className="bg-transparent text-white text-sm mx-2"
+                    icon={faDotCircle}
+                  />
+                  {t("tdemo")}
+                </span>
                 <Link href={isArabic ? "/ar/alfayad" : "/en/alfayad"}>
                   <FontAwesomeIcon
                     className="bg-transparent text-white text-sm mx-2"
